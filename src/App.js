@@ -8,21 +8,20 @@ import Times from './views/Times'
 import './App.css';
 
 function App() {
+  
   return (
     <div className="App">
+      <h1>Match the cards!</h1>
       <div>
-        <Link to="/">Game</Link>
-        <Link to="/times">Times</Link>
+        <Link to="/game">Game</Link>
+        |
+        <Link to="/times">Scores</Link>
       </div>
       <Switch>
         <Route path="/game" exact component = { Game } />
         <Route path="/times" exact component = { Times } />
         <Route path="/" exact component = { Home } />
       </Switch>
-      <div>
-        <p>copyrights...</p>
-        <Link to="/about">About Us</Link>
-      </div>
     </div>
   );
 } 
